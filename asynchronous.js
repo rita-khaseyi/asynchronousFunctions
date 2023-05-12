@@ -41,6 +41,8 @@ function getUserData(id) {
     }, 2000);
   });
 }
+fetchData()
+
 
 // You have an asynchronous function performTask() that returns a Promise.
 //  The Promise resolves if the task is successful and rejects if there's an error.
