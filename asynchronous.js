@@ -33,7 +33,8 @@ async function fetchData() {
 function getUserData(id) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      if (id >= 1 && id <= 5) {
+      if (id >= 1 && id <= userIds.length)
+      {
         resolve({ id, data: "id is present" });
       } else {
         reject(`invalid id number: ${id}`);
